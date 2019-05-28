@@ -1,6 +1,6 @@
 # WaveNet
-## A WaveNet a variant of WaveNet implemented in Keras
-This work implements the WaveNet network architecture and samll variant. The implementation is based on:
+## WaveNet and a variant of WaveNet implementation in Keras
+This work implements the WaveNet network architecture and small variant. The implementation is based on:
 1. [WaveNet: : A Generative Model for Raw Audio](https://arxiv.org/pdf/1609.03499.pdf)
 2. [Temporal Modeling Using Dilated Convolution and Fating for Voice-Activity-Detection](https://ai.google/research/pubs/pub47212)
 
@@ -15,7 +15,7 @@ Both models use a stack of WaveNet blocks (_**wavenet_block.py**_). _See **waven
 
 | |
 |:-------------------------:|
-|<img width="500" src="./images/wavenet.PNG"> **WaveNet Architecture** _Image source_: [1]|
+|<img width="500" src="./images/wavenet.PNG"> **WaveNet Architecture** _Image source_: [1](https://arxiv.org/pdf/1609.03499.pdf)|
 
 Predict next most likely value based on previous ones. Generat audio
 
@@ -24,10 +24,10 @@ Predict next most likely value based on previous ones. Generat audio
 3. Output a softmax distribution (apply to parameterized skip-connecitons)
 
 **Variant** (_Gated Dilated 1D Convolution with Residual connections_) [2]
+
 | |
-|:-------------------------:|:-------------------------:|
-|<img width="500" src="./images/variant.PNG"> |
-**Variant Architecture** _Image source_: [2]|
+|:-------------------------:|
+|<img width="500" src="./images/variant.PNG"> **Variant Architecture** _Image source_: [2](https://ai.google/research/pubs/pub47212)|
 
 Asses the probability of input being speech or not.
 
