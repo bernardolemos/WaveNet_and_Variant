@@ -45,7 +45,7 @@ def chunk_data(left_frames, data):
     if rs > 0:
         data = data[:-rs]
     #build data
-    X = data.reshape((n_chunks, left_frames, 1))
+    X = data.reshape((n_chunks, left_frames, 1)).astype(int)
     #build labels
     y = np.zeros(shape=(n_chunks, left_frames))
     for i in range(n_chunks):
@@ -72,6 +72,7 @@ def gen_data_from_model(model, out_size, X, hard=True):
     #reshape input to 3D array (model's input shape)
     X = X.reshape(1, X.shape[0], 1)
     #generate
+    print("Generating data from model...")
     for i in range(out_size):
         #get model's predictions
         predictions = model.predict(X)

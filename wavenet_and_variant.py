@@ -119,6 +119,4 @@ def dilated_gated_conv_res_net(input_dim, out_dim=2, k_layers=36, k_layers_dense
     if summary:
         model.summary()
 
-    return model 
-
-# wavenet = dilated_gated_conv_res_net(256)
+    return model
