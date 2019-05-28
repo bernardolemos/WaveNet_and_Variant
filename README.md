@@ -12,6 +12,10 @@ Both models use a stack of WaveNet blocks (_**wavenet_block.py**_). _See **waven
 **Main differences:**
 
 **WaveNet** [1]
+| |
+|:-------------------------:|:-------------------------:|
+|<img width="500" src="./images/wavenet.PNG"> |
+**WaveNet Architecture** _Image source_: [1]|
 
 Predict next most likely value based on previous ones. Generat audio
 
@@ -20,6 +24,10 @@ Predict next most likely value based on previous ones. Generat audio
 3. Output a softmax distribution (apply to parameterized skip-connecitons)
 
 **Variant** (_Gated Dilated 1D Convolution with Residual connections_) [2]
+| |
+|:-------------------------:|:-------------------------:|
+|<img width="500" src="./images/variant.PNG"> |
+**Variant Architecture** _Image source_: [2]|
 
 Asses the probability of input being speech or not.
 
@@ -27,13 +35,3 @@ Asses the probability of input being speech or not.
 2. Residual connections (accumulated input and output) - _doesn't use skip-connections_
 4. Aplly fully connected layer to stack's residual output
 3. Output probability of **_speech_** and **_non-speech_**
-
-### Although the models' original papers were followed, there are some difference in the implementation
-**Key implementation differences**
-**WaveNet**
-1. ...
-
-**Variant** (_Gated Dilated 1D Convolution with Residual connections_) [2]
-
-1. Original work used Asynchronous SGD, implemented model does not 
-
