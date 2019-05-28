@@ -12,10 +12,9 @@ Both models use a stack of WaveNet blocks (_**wavenet_block.py**_). _See **waven
 **Main differences:**
 
 **WaveNet** [1]
-| |
-|:-------------------------:|
-|<img width="500" src="./images/wavenet.PNG">
-**WaveNet Architecture** _Image source_: [1]|
+| | |
+|:-------------------------:|:-------------------------:|
+|<img width="500" src="./images/wavenet.PNG"> **WaveNet Architecture** _Image source_: [1]||
 
 Predict next most likely value based on previous ones. Generat audio
 
