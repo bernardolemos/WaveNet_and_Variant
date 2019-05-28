@@ -29,7 +29,7 @@ Predict next most likely value based on previous ones. Generat audio
 |:-------------------------:|
 |<img width="500" src="./images/variant.PNG"> **Variant Architecture** _Image source_: [[2]](https://ai.google/research/pubs/pub47212)|
 
-Asses the probability of input being speech or not.
+Assess the probability of input being speech or not.
 
 1. Aplly dimension matching to input and stack's outputs
 2. Residual connections (accumulated input and output) - _doesn't use skip-connections_
