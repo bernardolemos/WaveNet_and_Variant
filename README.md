@@ -12,7 +12,7 @@ Both models use a stack of WaveNet blocks (_**wavenet_block.py**_). _See **waven
 **Main differences:**
 
 **WaveNet** [1]
-| |
+| | |
 |:-------------------------:|:-------------------------:|
 |<img width="500" src="./images/wavenet.PNG"> |
 **WaveNet Architecture** _Image source_: [1]|
@@ -24,7 +24,7 @@ Predict next most likely value based on previous ones. Generat audio
 3. Output a softmax distribution (apply to parameterized skip-connecitons)
 
 **Variant** (_Gated Dilated 1D Convolution with Residual connections_) [2]
-| |
+| | |
 |:-------------------------:|:-------------------------:|
 |<img width="500" src="./images/variant.PNG"> |
 **Variant Architecture** _Image source_: [2]|
