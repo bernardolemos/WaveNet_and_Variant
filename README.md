@@ -11,7 +11,7 @@ Both models use a stack of WaveNet blocks (_**wavenet_block.py**_). _See **waven
 
 **Main differences:**
 
-**WaveNet** [1]
+**WaveNet** [[1]](https://arxiv.org/pdf/1609.03499.pdf)
 
 | |
 |:-------------------------:|
