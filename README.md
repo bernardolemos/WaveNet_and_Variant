@@ -9,8 +9,6 @@ _Both works have the same author: **_Aäron van den Oord_**_
 ## The models
 Both models use a stack of WaveNet blocks (_**wavenet_block.py**_). _See **wavenet_and_variant.py**_
 
-**Main differences:**
-
 **WaveNet** [[1]](https://arxiv.org/pdf/1609.03499.pdf)
 
 | |
